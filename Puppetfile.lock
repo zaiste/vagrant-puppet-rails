@@ -1,0 +1,17 @@
+FORGE
+  remote: http://forge.puppetlabs.com
+  specs:
+    puppetlabs/apt (1.1.0)
+      puppetlabs/stdlib (>= 2.2.1)
+    puppetlabs/firewall (0.3.0)
+    puppetlabs/postgresql (2.2.1)
+      puppetlabs/apt (>= 1.1.0, < 2.0.0)
+      puppetlabs/firewall (>= 0.0.4)
+      puppetlabs/stdlib (>= 3.2.0, < 5.0.0)
+      ripienaar/concat (>= 0.2.0)
+    puppetlabs/stdlib (4.1.0)
+    ripienaar/concat (0.2.0)
+
+DEPENDENCIES
+  puppetlabs/postgresql (>= 0)
+

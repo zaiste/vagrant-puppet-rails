@@ -1,0 +1,5 @@
+.tmp/
+.vagrant/
+.librarian
+modules/
+
