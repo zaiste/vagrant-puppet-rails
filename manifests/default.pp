@@ -60,11 +60,11 @@ class { 'postgresql::server':
 } ->
 package { 'postgresql-contrib-9.2':
 } ->
-postgresql::db { 'zaiste':
-  user     => 'zaiste',
-  password => 'zaiste'
+postgresql::role { 'zaiste':
+  createdb => true,
+  login => true,
+  password_hash => postgresql_password("zaiste", "zaiste")
 } ->
-
 exec { "install_ruby_build":
   command => "git clone https://github.com/sstephenson/ruby-build.git && cd ruby-build && sudo ./install.sh",
   cwd => $home,
