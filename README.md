@@ -2,7 +2,7 @@ Vagrant & Puppet for Rails
 ==========================
 
 A Vagrant configuration that automates the setup of a development environment
-for Rails development. It is based on Ubuntu 12.04 and it contains:
+for Rails applications. It is based on Ubuntu 12.04 and it contains:
 
 * PostgreSQL 9.2
 * ruby-build
@@ -27,7 +27,7 @@ Install [librarian-puppet](http://librarian-puppet.com/)
 Clone the repository
 
 ``` sh
-λ git clone <URL>
+λ git clone https://github.com/zaiste/vagrant-puppet-rails.git
 λ cd vagrant-puppet-rails
 ```
 
