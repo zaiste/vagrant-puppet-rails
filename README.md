@@ -18,13 +18,16 @@ Install [Vagrant](http://vagrantup.com)
 
 Install [Puppet](http://puppetlabs.com)
 
+``` sh
+λ gem install puppet
+```
 Install [librarian-puppet](http://librarian-puppet.com/)
 
 ``` sh
 λ gem install librarian-puppet
 ```
 
-Clone the repository
+Clone the repository you want to work with e.g.
 
 ``` sh
 λ git clone https://github.com/zaiste/vagrant-puppet-rails.git
@@ -41,6 +44,15 @@ Boot the virtual machine with automatic provision
 
 ``` sh
 λ vagrant up
+```
+
+Start the virtual machine, install bundler, run bundle
+
+``` sh
+λ vagrant ssh
+λ gem install bundler
+λ cd /vagrant
+λ bundle
 ```
 
 Let the magic happen.
